@@ -1,26 +1,22 @@
-import java.io.*;
-class palindrome
+#include<stdio.h>
+void main()
 {
-    public static void main(String args[])throws IOException
-    {
-        int n,temp,num,i,rev=0,ld;
-        DataInputStream dis=new DataInputStream(System.in);
-        num=Integer.parseInt(dis.readLine());
-        temp=num;
-        while(temp>0)
-        {
+     int n,temp,num,i,rev=0,ld;
+     scanf("%d",&num);
+     temp=num;
+     while(temp>0)
+     {
             ld=temp%10;
             rev=rev*10+ld;
             temp=temp/10;
-        }
-        if(rev==num)
+     }
+     if(rev==num)
         {
-        System.out.println("Yes");
+        printf("yes);
         }
         else
         {
-        System.out.println("No");
+        printf("No");
         }
-    }
 }
 
